@@ -17,7 +17,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
   background: linear-gradient(
       45deg,
       #03001e73 0%,
@@ -26,23 +25,29 @@ body {
       #11f0dd6c 100%
     ),
     linear-gradient(180deg, #03001e 0%, #7303c0 30%, #61ad5e 60%, #11f0dd 100%);
-  padding: 40px 60px;
-  height: 100vh;
+  margin-top: 10px;
+  max-width: 400px;
+  padding-bottom: 60px;
+  height: 80vh;
+  width: 100vw;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1em;
   text-shadow: #fd007e 1px 1px 15px, #fd007e 1px 1px 15px;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 1em;
+  margin: 10px 25px;
 }
 
 .reset {
+  position: absolute;
+  bottom: 0;
   padding: 15px 20px;
   width: 100%;
   color: #000000;
-  background-color: #fff;
+  background-color: #ffffffa9;
   border: none;
   font-size: 1.5em;
   letter-spacing: 0.1em;
@@ -57,7 +62,7 @@ h2 {
 }
 
 .game {
-  width: 70vw; /*430px*/
+  margin: 5px;
   justify-content: inherit;
   display: flex;
   flex-wrap: wrap;
@@ -67,8 +72,8 @@ h2 {
 }
 .item {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: min(20vw, 77px);
+  height: min(20vw, 77px);
   display: flex;
   align-items: center;
   justify-content: center;
